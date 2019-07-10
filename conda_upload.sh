@@ -1,5 +1,3 @@
-conda install conda-build  
-conda install anaconda-client 
 USER=f0xy  
 conda config --set anaconda_upload no  
 conda build . -c conda-forge
