@@ -1,0 +1,21 @@
+package:
+  name: l8_angles
+  version: "2.7.0"
+
+source:
+  fn: L8_ANGLES_2_7_0.tgz
+  md5: 3da81a7ecc99ae24235c9fd4cd217eeb
+  url: https://landsat.usgs.gov/sites/default/files/documents/L8_ANGLES_2_7_0.tgz 
+
+requirements:
+  build: 
+    - make 
+    - gcc 
+  run:
+    - make 
+    - gcc 
+about:
+  home: https://www.usgs.gov/media/files/landsat-8-angles-creation-tools-readme
+  license: MIT
+  summary: "A Prototype tool is available on the Landsat website at https://www.usgs.gov/land-resources/nli/landsat/solar-illumination-and-sensor-viewing-angle-coefficient-files which generates sensor viewing and solar illumination angles for Landsat 8 mission. 
+To use the angle generation tool you must have an angle coefficient text file (*_ANG.txt) for the Level 1 product you are using. This ANG file is created at product generation time from the geometric model and grid files used to perform the geometric correction. The angle generation tool generates binary image files containing 16-bit integers representing the zenith and azimuth angle in units of degrees scaled by 100. The azimuth and zenith angles are written into the same file in band sequential order (azimuth first). "
