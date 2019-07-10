@@ -3,7 +3,7 @@ package:
   version: "2.7.0"
 
 source:
-  git_url: https://github.com/MarcYin/build_l8_angle.git
+  git_url: git@github.com:MarcYin/buid_l8_angle.git
   git_tag: master
 requirements:
   build: 
