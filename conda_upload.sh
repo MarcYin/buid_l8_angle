@@ -1,5 +1,6 @@
 USER=f0xy  
 conda config --set anaconda_upload no  
+conda install conda-build anaconda-client gcc make 
 conda build . -c conda-forge
 export CONDA_PACKAGE=`conda build --output . -c conda-forge | grep bz2`
 echo $CONDA_PACKAGE
